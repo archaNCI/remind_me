@@ -34,18 +34,19 @@
 
 #column-left{
     float: left; 
-    position: absolute; 
+    position: fixed; 
     left: 0px; 
     top: 0px; 
     width: 21%; 
     height: 100%; 
-    margin-left: 0px; 
+    margin-left: 0px;
+    
     background-image: url(background.bmp);
 }
 
 #column-right{
     float: right; 
-    position: absolute; 
+    position: fixed; 
     right: 0px; 
     top: 0px; 
     width: 21%; 
