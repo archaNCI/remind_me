@@ -26,8 +26,8 @@
 }
 
 #column-center{
-    display: inline-block; 
-    position: center; 
+    margin-left: auto ;
+    margin-right: auto ;
     text-align: center; 
     width: 58%;
 }
