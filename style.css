@@ -1,3 +1,4 @@
+
 #header{
     float: inherit; 
     position: fixed; 
@@ -34,22 +35,28 @@
 
 #column-left{
     float: left; 
-    position: fixed; 
+    position:absolute;
     left: 0px; 
     top: 0px; 
     width: 21%; 
-    height: 100%; 
+    height: 99%; 
     margin-left: 0px;
-    
     background-image: url(background.bmp);
+    overflow:hidden;
+    padding-bottom: 2000px;
+    margin-bottom: -2000px;
+
 }
 
 #column-right{
     float: right; 
-    position: fixed; 
+    position:absolute;
     right: 0px; 
     top: 0px; 
     width: 21%; 
     height: 100%; 
     background-image: url(background.bmp);
+    overflow:hidden;
+    padding-bottom: 2144px;
+    margin-bottom: -2144px;
 }
