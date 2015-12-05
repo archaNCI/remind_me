@@ -1,79 +1,58 @@
-#remind-app {
-    margin: 1em;
-    text-align: center;
+.remind-list{
+    width: 250px;
+    float: left;
+    margin: 0 5px;
+    background-color: #e3e3e3;
+    min-height: 240px;
+    border-radius: 10px;
+    padding-bottom: 15px;
 }
 
-#remind-list,
-#remind-stats {
-    margin: 1em auto;
-    text-align: left;
-    width: 450px;
+.remind-list input, .remind-list textarea{
+    width: 240px;
+    margin: 1px 5px;
 }
 
-#remind-list {
-    list-style: none;
-    padding: 0;
+.remind-list input{
+    height: 30px;
 }
 
-#remind-stats,
-.remind-clear { color: #777777; }
-.remind-clear { float: right; }
-.remind-done .remind-content {
-    color: #666666;
-    text-decoration: line-through;
+.remind-task{
+    border-radius: 5px;
+    background-color: #ffffff;
+    width: 230px;
+    margin: 5px;
+    padding: 5px;
 }
 
-.remind-edit,
-.editing .remind-view { display: none; }
-.editing .remind-edit { display: block; }
-
-.remind-input {
-    display: block;
-    font-family: Helvetica, sans-serif;
-    font-size: 20px;
-    line-height: normal;
-    margin: 5px auto 0;
-    padding: 6px;
-    width: 420px;
+.remind-list input[type="button"]{
+    width: 100px;
+    margin: 5px;
 }
 
-.remind-item {
-    border-bottom: 1px dotted #cfcfcf;
-    font-size: 20px;
-    padding: 6px;
-    position: relative;
-}
-
-.remind-label {
-    color: #444444;
-    font-size: 20px;
-    font-weight: bold;
-    text-align: center;
-}
-
-.remind-remaining {
-    color: #333333;
+.remind-task > .remind-header{
     font-weight: bold;
 }
 
-.remind-remove {
-    position: absolute;
-    right: 0;
-    top: 12px;
+.remind-task > .remind-date{
+    font-size: small;
+    font-style: italic;
 }
 
-.remind-remove-icon {
-    background: url(Images/remove.png) no-repeat;
-    display: block;
-    height: 16px;
-    opacity: 0.6;
-    visibility: hidden;
-    width: 23px;
+.remind-task > .remind-description{
+    font-size: smaller;
 }
 
-.remind-remove:hover .remind-remove-icon { opacity: 1.0; }
+h3{
+    text-align: center;
+}
 
-.remind-hover .remind-remove-icon,
-.remind-remove:focus .remind-remove-icon { visibility: visible; }
+#delete{
+    background-color: #ffffff;
+    border: 3px dotted #000000;
+    margin: 10px;
+    height: 75px;
+    line-height: 75px;
+    text-align: center;
+}
 
-.editing .remind-remove-icon { visibility: hidden; }
