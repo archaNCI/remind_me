@@ -1,0 +1,79 @@
+#remind-app {
+    margin: 1em;
+    text-align: center;
+}
+
+#remind-list,
+#remind-stats {
+    margin: 1em auto;
+    text-align: left;
+    width: 450px;
+}
+
+#remind-list {
+    list-style: none;
+    padding: 0;
+}
+
+#remind-stats,
+.remind-clear { color: #777777; }
+.remind-clear { float: right; }
+.remind-done .remind-content {
+    color: #666666;
+    text-decoration: line-through;
+}
+
+.remind-edit,
+.editing .remind-view { display: none; }
+.editing .remind-edit { display: block; }
+
+.remind-input {
+    display: block;
+    font-family: Helvetica, sans-serif;
+    font-size: 20px;
+    line-height: normal;
+    margin: 5px auto 0;
+    padding: 6px;
+    width: 420px;
+}
+
+.remind-item {
+    border-bottom: 1px dotted #cfcfcf;
+    font-size: 20px;
+    padding: 6px;
+    position: relative;
+}
+
+.remind-label {
+    color: #444444;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.remind-remaining {
+    color: #333333;
+    font-weight: bold;
+}
+
+.remind-remove {
+    position: absolute;
+    right: 0;
+    top: 12px;
+}
+
+.remind-remove-icon {
+    background: url(Images/remove.png) no-repeat;
+    display: block;
+    height: 16px;
+    opacity: 0.6;
+    visibility: hidden;
+    width: 23px;
+}
+
+.remind-remove:hover .remind-remove-icon { opacity: 1.0; }
+
+.remind-hover .remind-remove-icon,
+.remind-remove:focus .remind-remove-icon { visibility: visible; }
+
+.editing .remind-remove-icon { visibility: hidden; }
