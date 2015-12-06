@@ -1,7 +1,5 @@
 ::-webkit-input-placeholder {
     font-family: Helvetica;
-    color: red;
-    text-align center;
 }
 
 .task-reminder{
@@ -35,11 +33,14 @@
 
 .task-list{
     display: inline-block;
+    border-style: solid;
+    border-width: 1px;
     vertical-align: top;
     width: 30%;
     margin: 0 5px;
+    margin-top: 75px;
     background-color: #cccccc;
-    min-height: 300px;
+    min-height: 350px;
     border-radius: 7px;
     padding-bottom: 15px;
 }
@@ -60,8 +61,9 @@
 
 .remind-task > .task-date{
     font-family: Helvetica, sans-serif;
-    font-size: small;
-    font-style: italic;
+    font-weight: bold;
+    font-size: smaller;
+    color: #168;
 }
 
 .remind-task > .task-description{
@@ -76,6 +78,8 @@ h3{
 
 #delete{
     display: none;
+    font-family: Helvetica, sans-serif;
+    text-align: center;
     background-color: #fff;
     border: 3px dotted #000;
     margin: 50px;
