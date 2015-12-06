@@ -1,58 +1,85 @@
-.remind-list{
-    width: 250px;
-    float: left;
-    margin: 0 5px;
-    background-color: #e3e3e3;
-    min-height: 240px;
-    border-radius: 10px;
-    padding-bottom: 15px;
+::-webkit-input-placeholder {
+    font-family: Helvetica;
+    color: red;
+    text-align center;
 }
 
-.remind-list input, .remind-list textarea{
-    width: 240px;
-    margin: 1px 5px;
+.task-reminder{
+    width: 100%;
+    height: 300px;
 }
 
-.remind-list input{
+.task-reminder input[class="title"]{
+    margin: 0 auto;
+    width: 50%;
+    margin-top: 20px;
     height: 30px;
 }
 
+.task-reminder input[class="deadline"]{
+    margin-top: 5px;
+    width: 50%;
+    height: 30px;
+}
+
+.task-reminder textarea[class="description"]{
+    margin-top: 5px;
+    width: 50%;
+    height: 60px;
+}
+
+.buttons{
+    margin-top: 5px;
+    height: 30px;
+}
+
+.task-list{
+    display: inline-block;
+    vertical-align: top;
+    width: 30%;
+    margin: 0 5px;
+    background-color: #cccccc;
+    min-height: 300px;
+    border-radius: 7px;
+    padding-bottom: 15px;
+}
+
 .remind-task{
+    border-style: solid;
+    border-width: 1px;
     border-radius: 5px;
-    background-color: #ffffff;
-    width: 230px;
-    margin: 5px;
+    background-color: #fff;
+    width: 88%;
+    margin: 0 auto;
     padding: 5px;
 }
 
-.remind-list input[type="button"]{
-    width: 100px;
-    margin: 5px;
-}
-
-.remind-task > .remind-header{
+.remind-task > .task-header{
     font-weight: bold;
 }
 
-.remind-task > .remind-date{
+.remind-task > .task-date{
+    font-family: Helvetica, sans-serif;
     font-size: small;
     font-style: italic;
 }
 
-.remind-task > .remind-description{
+.remind-task > .task-description{
+    font-family: Helvetica, sans-serif;
     font-size: smaller;
 }
 
 h3{
+    font-family: Helvetica, sans-serif;
     text-align: center;
 }
 
 #delete{
-    background-color: #ffffff;
-    border: 3px dotted #000000;
-    margin: 10px;
+    display: none;
+    background-color: #fff;
+    border: 3px dotted #000;
+    margin: 50px;
     height: 75px;
     line-height: 75px;
     text-align: center;
 }
-

@@ -9,48 +9,52 @@
         <link rel="stylesheet" href="styleREMIND.css">
         
     </head>
+    
     <body>
         
         <div id="header" border="2">
             <div id="logo">
                 <img src="Images/re.me.bmp" alt="logo" height="70" width="150" border="2"/>
             </div>
+            
         </div>
         
         <div id="container">
             <div id="column-left"></div>
             <div id="column-center">
-                <div class="remind-list" id="pending">
+                
+                <div class="task-reminder">
+                    <h3>Add Reminder</h3>
+                    <form id="remind-form">
+                        <input type="text" placeholder="Title" class="title"/>
+                        <textarea placeholder="Description" class="description"></textarea>
+                        <input type="text" placeholder="Deadline (dd/mm/yyyy)" class="deadline"/>
+                        <div class="buttons">
+                        <input type="button" class="button-add" value="Add Task"/>
+                        <input type="button" class="button-clear" value="Clear Task"/>
+                        </div>
+                    </form>
+                </div>
+                
+                <div id="delete">Drag Here to Delete</div>
+                
+                <div class="task-list" id="pending">
                     <h3>Pending</h3>
                     
                     <!-- Sample reminder to check looks -->
                     <div class="remind-task">
-                        <div class="remind-header">Sample Header</div>
-                        <div class="remind-date">05/12/2015</div>
-                        <div class="remind-description">Low Fat Milk</div>
+                        <div class="task-header">Sample Header</div>
+                        <div class="task-date">05/12/2015</div>
+                        <div class="task-description">Low Fat Milk</div>
                     </div>
+                </div>
                     
-                    <div class="remind-list" id="progress">
-                        <h3>In Progress</h3>
-                    </div>
+                <div class="task-list" id="progress">
+                    <h3>In Progress</h3>
+                </div>
                     
-                    <div class="remind-list" id="completed">
-                        <h3>Completed</h3>
-                    </div>
-                    
-                    <div class="remind-list">
-                        <h3>Add Reminder</h3>
-                        <form id="remind-form">
-                            <input type="text" placeholder="Title"/>
-                            <textarea placeholder="Description"></textarea>
-                            <input type="text" placeholder="Deadline (dd/mm/yyyy)"/>
-                            <input type="button" class="button-primary" value="Add Task"/>
-                        </form>
-                    </div>
-                    
-                    <input type="button" class="button-primary" value="Clear Task"/>
-                    
-                    <div id="delete">Drag Here to Delete</div>
+                <div class="task-list" id="completed">
+                    <h3>Completed</h3>
                 </div>
                 
             </div>

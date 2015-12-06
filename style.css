@@ -1,3 +1,4 @@
+
 #header{
     position: fixed;
     top: 0px; 
@@ -27,6 +28,8 @@
     display: inline-block; 
     position: absolute;
     text-align: center; 
+    margin: 0 auto;
+    border: 0;
     width: 58%;
     height: 100%;
     left: 21%;
@@ -35,7 +38,7 @@
 
 #column-left{
     float: left; 
-    position: absolute; 
+    position:absolute;
     left: 0px; 
     top: 0px; 
     width: 21%; 
@@ -49,7 +52,7 @@
 
 #column-right{
     float: right; 
-    position: absolute; 
+    position:absolute;
     right: 0px; 
     top: 0px; 
     width: 21%; 
@@ -58,4 +61,25 @@
     overflow:hidden;
     padding-bottom: 2000px;
     margin-bottom: -2000px;
+}
+
+#task {
+    padding: 10px;
+    border: 1px solid #333;
+    background-color: #FFFFFF;
+    font-size: 22px;
+    cursor:pointer;
+    outline: none;
+    height: 22px;
+    margin-top:120px;
+}
+
+#add{
+    padding:10px;
+    border: 1px solid #333;
+    background-color: #ccc;
+    font-size: 22px;
+    cursor:pointer;
+    outline: none;
+    height: 48px;
 }
