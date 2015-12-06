@@ -1,3 +1,4 @@
+
 #header{
     float: inherit; 
     position: fixed; 
@@ -26,29 +27,115 @@
 }
 
 #column-center{
-    display: inline-block; 
-    position: center; 
+    margin-left: auto ;
+    margin-right: auto ;
     text-align: center; 
     width: 58%;
 }
 
 #column-left{
     float: left; 
-    position: absolute; 
+    position:absolute;
     left: 0px; 
     top: 0px; 
     width: 21%; 
-    height: 100%; 
-    margin-left: 0px; 
+    height: 99%; 
+    margin-left: 0px;
     background-image: url(background.bmp);
+    overflow:hidden;
+    padding-bottom: 2000px;
+    margin-bottom: -2000px;
+
 }
 
 #column-right{
     float: right; 
-    position: absolute; 
+    position:absolute;
     right: 0px; 
     top: 0px; 
     width: 21%; 
     height: 100%; 
     background-image: url(background.bmp);
+    overflow:hidden;
+    padding-bottom: 2144px;
+    margin-bottom: -2144px;
+}
+
+h1{
+    font-size: 40px;
+    font-weight:100;
+    margin-top: 100px;
+}
+
+a, a:link {
+    outline: none;
+}
+
+input[type="text"] {
+    padding: 10px;
+    margin-right: 10px;
+    font-size: 22px;
+    height: 25px;
+    width: 300px;
+}
+
+input[type="submit"] {
+    padding:10px;
+    border: 1px solid #333;
+    background-color: #ccc;
+    font-size: 22px;
+    cursor:pointer;
+    outline: none;
+    height: 54px;
+}
+
+ul {
+    padding: 0px;
+    margin: 15px auto 0;
+    width: 545px;
+}
+
+ul li {
+    padding:10px;
+    list-style-type: none;
+    font-size: 22px;
+    background-color:#efefef;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+ul li span {
+    cursor:text;
+}
+
+ul li a, ul li a:link {
+    float: right;
+    color:#f03;
+    text-decoration:none;
+    display:none;
+}
+
+ul li a:hover {
+    text-decoration: underline;
+}
+
+#task {
+    padding:10px;
+    border: 1px solid #333;
+    background-color: #FFFFFF;
+    font-size: 22px;
+    cursor:pointer;
+    outline: none;
+    height: 22px;
+    margin-top:120px;
+}
+
+#add{
+    padding:10px;
+    border: 1px solid #333;
+    background-color: #ccc;
+    font-size: 22px;
+    cursor:pointer;
+    outline: none;
+    height: 48px;
 }
