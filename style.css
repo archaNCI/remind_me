@@ -7,7 +7,7 @@
     height: 50px; 
     z-index: 1; 
     text-align: center; 
-    background: #eee;
+    background-image: url(Images/backgroundH.jpg);
     -webkit-box-shadow: 0 8px 6px -6px #000000;
     -moz-box-shadow: 0 8px 6px -6px #000000;
     box-shadow: 0 8px 6px -6px #000000;
@@ -28,12 +28,14 @@
     display: inline-block; 
     position: absolute;
     text-align: center; 
+    background-image: url(Images/backgroundMain.png);
     margin: 0 auto;
     border: 0;
     width: 58%;
     height: 100%;
     left: 21%;
-    top: 100px;
+    top: 50px;
+    overflow: hidden;
 }
 
 #column-left{

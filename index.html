@@ -7,6 +7,9 @@
         <title>Remind.ME</title>
         <link rel="stylesheet" href="style.css"/>
         <link rel="stylesheet" href="styleREMIND.css">
+        <script type="text/javascript" src="toTop.js"></script>
+        <script type="text/javascript" src="remindme.js"></script>
+        <script type="text/javascript" src="remindmeNew.js"></script>
         
     </head>
     
@@ -14,7 +17,7 @@
         
         <div id="header" border="2">
             <div id="logo">
-                <img src="Images/re.me.bmp" alt="logo" height="70" width="150" border="2"/>
+                <a href="#" id="toTop"><img src="Images/logo.jpg" alt="logo" height="70" width="150" border="0"/></a>
             </div>
             
         </div>
@@ -24,7 +27,7 @@
             <div id="column-center">
                 
                 <div class="task-reminder">
-                    <h3>Add Reminder</h3>
+                    <h3 class="addh3">ADD REMINDER</h3>
                     <form id="remind-form">
                         <input type="text" placeholder="Title" class="title"/>
                         <input type="text" placeholder="Deadline (dd/mm/yyyy)" class="deadline"/>
